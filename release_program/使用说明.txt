@@ -1,0 +1,37 @@
+本程序用来为仙剑6的配置文件中的二进制流数据修改提供辅助，见http://tieba.baidu.com/p/3993348453。
+
+对各个二进制文件的解读方式，在Config.xml中已经由作者写好，可以自行修改，满足自身需求。
+
+将仙6的二进制文件（Data内的dat格式文件）拖动到本程序上，即可生成对应的xml格式文件，以供编辑。
+
+将编辑后的文件拖动到本程序，可生成原来的数据文件。
+
+可以在Config.xml设置生成文件的存放目录。
+
+使用过程中遇到任何问题，请于此处http://tieba.baidu.com/p/3960653272反馈。
+
+										Designed By 风靡义磊 
+
+
+附，Config.xml中配置语法
+
+①数据类型与C#语法的对应：
+"INT": ReadInt32()
+"UINT": ReadUInt32()
+"LONG": ReadInt64()
+"ULONG": ReadUInt64()
+"SHORT": ReadInt16()
+"USHORT": ReadUInt16()
+"BYTE": ReadByte()
+"BOOL": ReadBoolean()
+"FLOAT": ReadSingle()
+"DOUBLE": ReadDouble()
+"STRING": ReadString()
+"LANGUE": 读一个ULong，再读一个String，以/分割。
+"ID": 实质是读一个UInt，高一字节作为装备类型，低三字节为编号，以/分割。
+
+②格式：
+特性内有几种格式。
+格式一，单独一个数据类型，如 编号="ID"，表示从dat中读取一个ID。
+格式二，逗号分隔，逗号右边为数字，左边为数字或者数据类型。如 物品种数="INT,2"，表示从dat中读取一个INT，假设读到n，然后后面两组信息循环读取n次； 或者物品种数="4,2"，表示后面两组信息循环4次。
+格式三，俩逗号分隔，中间一个为*，第一个表示子元素数量，可以为数据类型，第三个表示子元素的特性数量，若不写则为子元素的所有特性。此处较难叙述，详见Config.xml中各种用法。

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+<!-- xml保存路径中，输入dat文件转换为xml后应存放的目录。可以输入相对路径，也可以输入"源文件目录"。 -->
+<!-- 举例：xml保存路径="xml" xml保存路径="源文件目录\xml" dat保存路径="C:\dat"-->
+	<Config xml保存路径="Property" dat保存路径="dat" />
+
+<!-- Item文件夹 -->
+
+	<Cloth.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 图标路径="STRING" 可用角色="UINT" 基础属性="1,*" 属性抗性="1,*" BuffDebuff类型="UINT" 价格="INT" 卖出="BOOL" 声望类型="INT" 声望值="INT" 状态抗性数量="1,*,INT" >
+		<基础属性 物防="INT" 仙防="INT" 身法="INT" 运势="INT" 闪避="INT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</Cloth.dat>
+	
+	<ClothDecal.dat 编号="ID" 名称="LANGUE"  材质路径="STRING" 可用角色="UINT" 价格="INT" 声望类型="INT" 声望值="INT" />
+
+	<ClothTexture.dat 编号="ID" 名称="LANGUE"  材质路径="STRING" 高光路径="STRING" 颜色数量="8,1" 颜色="UINT" 可用角色="UINT" 价格="INT" 声望类型="INT" 声望值="INT" />
+
+	<FashionCloth.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 图标路径="STRING" 布料编号="ID" 刺绣编号="ID" 可用角色="UINT" 属性="1,*" 属性抗性="1,*" 属性加成="1,*" BuffDebuff类型="UINT" 状态抗性数量="1,*,INT" >
+		<基础属性 物防="INT" 仙防="INT" 身法="INT" 运势="INT" 闪避="INT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</FashionCloth.dat>
+	
+	<Normal.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 图标路径="STRING" 掉率="FLOAT" 特效="STRING" 开启脚本="STRING" 脚本="STRING" 类型="INT" 稀有度="INT" 对象="INT" 敌我="INT" 使用方式="INT" 使用许可="INT" 价格="INT" 卖出="BOOL" 声望类型="INT" 声望值="INT" ATB值="FLOAT" /> 
+
+	<SymbolNode.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 情报编号="INT" 属性="BYTE" 属性值="INT" 加成="1,*" 抗性="1,*" BuffDebuff类型="UINT" >
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+	</SymbolNode.dat>
+
+	<SymbolPanel.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 情报编号="INT" BuffDebuff类型="INT" 激活条件="1,*" 主节点="1,*" 岛节点="1,*" >
+		<激活条件 水="INT" 风="INT" 火="INT" 土="INT" 雷="INT" 物理="INT" 阴="INT" 阳="INT" />
+		<主节点 数量="INT,1" 节点="BYTE" />
+		<岛节点 数量="INT,1" 节点="BYTE" />
+	</SymbolPanel.dat>
+		
+	<Shoes.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 图标路径="STRING" 可用角色="UINT" 基础属性="1,*" 加成="1,*" 抗性="1,*" BuffDebuff类型="UINT" 价格="INT" 卖出="BOOL" 声望类型="INT" 声望值="INT" 状态抗性数量="1,*,INT" >
+		<基础属性 物防="INT" 仙防="INT" 身法="INT" 运势="INT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</Shoes.dat>
+
+	<Ornament.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 图标路径="STRING" 可用角色="UINT" 模型路径="STRING" 基础属性="1,*" 加成="1,*" 抗性="1,*" BuffDebuff类型="UINT" 价格="INT" 卖出="BOOL" 声望类型="INT" 声望值="INT" 状态抗性数量="1,*,INT" >
+		<基础属性 物攻="INT" 物防="INT" 仙攻="INT" 仙防="INT" 身法="INT" 运势="INT" 闪避="INT" 命中="INT" 格挡="INT" 暴击="INT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</Ornament.dat>
+
+	<CompoundItemList.dat 编号="BYTE" 材料1编号="ID" 材料1数量="INT" 材料2编号="ID" 材料2数量="INT" 材料3编号="ID" 材料3数量="INT" 结果1编号="ID" 结果2编号="ID" />
+
+	<Weapon.dat 编号="ID" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 图标路径="STRING" 可用角色="UINT"  模型1="STRING" 模型2="STRING" T2模型1="STRING" T2模型2="STRING" AssortTex="STRING" 豆包模型="STRING" 基础属性="1,*" 加成="1,*" BuffDebuff类型="UINT" 价格="INT" 卖出="BOOL" 幻化价格="INT" 声望类型="INT" 声望值="INT" >
+		<基础属性 物攻="INT" 仙攻="INT" 命中="INT" 格挡="INT" 暴击="INT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+	</Weapon.dat>
+
+	
+	
+<!-- Property文件夹 -->
+
+	<Fight.dat.0 编号="UINT" 基础属性="1,*" 加成="1,*" 抗性="1,*" ATB值="FLOAT" ATB增率="FLOAT" 安全距离="FLOAT" 近战攻击距离="FLOAT" 被击距离="FLOAT" ChainValue="FLOAT" 最大破防值="FLOAT" 破防持续时间="FLOAT" 破防增率="1,*" 破防伤害倍率="FLOAT" 弱点属性="BYTE" 击飞高度="FLOAT" 追击时间="FLOAT" 胶囊="1,*" 旋转速度="FLOAT" ShowY="FLOAT" ShowRadius="FLOAT" BreakMask="UINT" BreakStateTime="FLOAT" AI脚本="STRING" 被命中音效="STRING" 状态抗性数量="1,*,INT" 被命中特效距离="FLOAT" 面板物防="FLOAT" 面板仙防="FLOAT" >
+		<基础属性 物攻="FLOAT" 仙攻="FLOAT" 物防="FLOAT" 仙防="FLOAT" 命中="FLOAT" 闪避="FLOAT" 格挡率="FLOAT" 暴击率="FLOAT" 身法="FLOAT" 运势="FLOAT" 格挡="FLOAT" 暴击="FLOAT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<破防增率 水="FLOAT" 风="FLOAT" 火="FLOAT" 土="FLOAT" 雷="FLOAT" 无="FLOAT" 阴="FLOAT" 阳="FLOAT" />
+		<胶囊 胶囊半径="FLOAT" 胶囊高="FLOAT" 胶囊中心高="FLOAT" 胶囊中心X="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</Fight.dat.0>
+		
+	<Fight.dat.1 编号="UINT" 基础属性="1,*" 加成="1,*" 抗性="1,*" ATB值="FLOAT" ATB增率="FLOAT" 安全距离="FLOAT" 近战攻击距离="FLOAT" 被击距离="FLOAT" ChainValue="FLOAT" 最大破防值="FLOAT" 破防持续时间="FLOAT" 破防增率="1,*" 破防伤害倍率="FLOAT" 弱点属性="BYTE" 击飞高度="FLOAT" 追击时间="FLOAT" 胶囊="1,*" 旋转速度="FLOAT" ShowY="FLOAT" ShowRadius="FLOAT" BreakMask="UINT" BreakStateTime="FLOAT" AI脚本="STRING" 被命中音效="STRING" 状态抗性数量="1,*,INT" 被命中特效距离="FLOAT" 面板物防="FLOAT" 面板仙防="FLOAT" >
+		<基础属性 物攻="FLOAT" 仙攻="FLOAT" 物防="FLOAT" 仙防="FLOAT" 命中="FLOAT" 闪避="FLOAT" 格挡率="FLOAT" 暴击率="FLOAT" 身法="FLOAT" 运势="FLOAT" 格挡="FLOAT" 暴击="FLOAT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<破防增率 水="FLOAT" 风="FLOAT" 火="FLOAT" 土="FLOAT" 雷="FLOAT" 无="FLOAT" 阴="FLOAT" 阳="FLOAT" />
+		<胶囊 胶囊半径="FLOAT" 胶囊高="FLOAT" 胶囊中心高="FLOAT" 胶囊中心X="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</Fight.dat.1>	
+	
+	<Fight.dat.2 编号="UINT" 基础属性="1,*" 加成="1,*" 抗性="1,*" ATB值="FLOAT" ATB增率="FLOAT" 安全距离="FLOAT" 近战攻击距离="FLOAT" 被击距离="FLOAT" ChainValue="FLOAT" 最大破防值="FLOAT" 破防持续时间="FLOAT" 破防增率="1,*" 破防伤害倍率="FLOAT" 弱点属性="BYTE" 击飞高度="FLOAT" 追击时间="FLOAT" 胶囊="1,*" 旋转速度="FLOAT" ShowY="FLOAT" ShowRadius="FLOAT" BreakMask="UINT" BreakStateTime="FLOAT" AI脚本="STRING" 被命中音效="STRING" 状态抗性数量="1,*,INT" 被命中特效距离="FLOAT" 面板物防="FLOAT" 面板仙防="FLOAT" >
+		<基础属性 物攻="FLOAT" 仙攻="FLOAT" 物防="FLOAT" 仙防="FLOAT" 命中="FLOAT" 闪避="FLOAT" 格挡率="FLOAT" 暴击率="FLOAT" 身法="FLOAT" 运势="FLOAT" 格挡="FLOAT" 暴击="FLOAT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+		<破防增率 水="FLOAT" 风="FLOAT" 火="FLOAT" 土="FLOAT" 雷="FLOAT" 无="FLOAT" 阴="FLOAT" 阳="FLOAT" />
+		<胶囊 胶囊半径="FLOAT" 胶囊高="FLOAT" 胶囊中心高="FLOAT" 胶囊中心X="FLOAT" />
+		<不良状态抗性 冻结抗性="INT" 昏睡抗性="INT" 混乱抗性="INT" 异变抗性="INT" 中毒抗性="INT" 沉默抗性="INT" 污浊抗性="INT" 压制抗性="INT" 脱力抗性="INT" 虚弱抗性="INT" 麻痹抗性="INT" />
+	</Fight.dat.2>
+	
+	<SocialNpc.dat 编号="UINT" 等级="INT" 看="BOOL" 被看="BOOL" 特效缩放="FLOAT" 碰撞长="FLOAT" 碰撞宽="FLOAT" 默认动作="BYTE" 随机任务="FLOAT" />
+	
+	<PlayerBase.dat 等级="UINT" 所需经验="UINT" 越今朝="1,*" 越祈="1,*" 闲卿="1,*" 洛昭言="1,*" 居十方="1,*" 明绣="1,*" >
+		<越今朝 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+		<越祈 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+		<闲卿 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+		<洛昭言 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+		<居十方 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+		<明绣 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+	</PlayerBase.dat>
+	
+	<Character.dat 编号="INT" 名称="LANGUE" 阵营="INT" 嘴型数量="INT,1" 嘴型="INT" IsDynMecaLoad="BOOL" />
+
+	<HPMPDP.dat.0 编号="UINT" 精上限="INT" 神上限="INT" 气上限="INT" />
+	<HPMPDP.dat.1 编号="UINT" 精上限="INT" 神上限="INT" 气上限="INT" />
+	<HPMPDP.dat.2 编号="UINT" 精上限="INT" 神上限="INT" 气上限="INT" />
+
+	<Monster.dat 编号="UINT" 情报编号="INT" 图标路径="STRING" 默认动作="STRING" 种类="INT" 封印="BOOL" 金钱="INT" 等级="INT" 经验="INT" 魂魄="INT" 防御音效="STRING" 封印难度="FLOAT" 符咒="ID" 偷窃="ID" 死亡特效编号="INT" 掉落种数="INT,*" >
+		<掉落 掉落编号="ID" 掉落数量="INT" 掉落概率="FLOAT" />
+	</Monster.dat>
+	
+	<ItemContainer.dat 编号="UINT" 售货员编号="INT" 物品种数="INT,*" >
+		<物品 编号="ID" 数量="INT" />
+	</ItemContainer.dat>
+
+	<RanFangContainer.dat 编号="UINT" 售货员编号="INT" 旗标值="INT" 布料="1,*" 刺绣="1,*" >
+		<布料 种数="INT,1" 编号="UINT" />
+		<刺绣 种数="INT,1" 编号="UINT" />
+	</RanFangContainer.dat>
+	
+	<PickUpItemContainer.dat 编号="UINT" 模型路径="STRING" 物品="1,*" 特效编号="INT" 默认动作="STRING" 点击="1,*" 拾取后删除="BOOL" 绑定脚本="STRING" >
+		<物品 物品种数="INT,2" 物品编号="ID" 物品数量="INT" />
+		<点击 隐藏="1,*" 点击改变特效编号="INT" 改变特效时间="FLOAT" 点击特效="1,*" 点击改变动作="STRING" 改变动作时间="FLOAT" 点击循环动作="STRING" >
+			<隐藏 隐藏="BOOL" 隐藏时间="FLOAT" 隐藏特效="BOOL" 隐藏特效时间="FLOAT" />
+			<点击特效 点击特效编号="INT" 点击特效路径="STRING" 点击特效时间="FLOAT" />
+		</点击>
+	</PickUpItemContainer.dat>	
+			
+	<Player.dat 编号="UINT" 初始称号="INT" 初始武器="INT" 初始衣服="INT" 初始鞋子="INT" 初始饰品="INT" 脚本组1="INT" 脚本组2="INT" 技能组1="LANGUE" 技能组2="LANGUE" />
+
+	<SoulStar.dat 编号="UINT" 名称="LANGUE" 介绍="LANGUE" 属性="1,*" 加成="1,*" 抗性="1,*" 魂魄需求="INT" 开启脚本="STRING" 关闭脚本="STRING" >
+		<人物属性 精上限="INT" 力="FLOAT" 体="FLOAT" 速="FLOAT" 运="FLOAT" 术="FLOAT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+	</SoulStar.dat>
+
+
+<!-- Data文件夹 -->
+
+	<RenownData.dat 声望数量="INT,*" 地图数量="INT,*" 声望组数="INT,*" 最大声望="INT" >
+		<Renowns 声望编号="INT" 名称="ULONG" 介绍="ULONG" 信赖="INT" 崇拜="INT" 最大声望="INT" />
+		<IndexMap Key="INT" Value="INT" />
+		<Elements 名称="ULONG" 数量="INT,1" 编号="INT" />
+	</RenownData.dat>
+	
+	<Mission 主线数量="INT,*" 支线数量="INT,*" 小事件数量="INT,*" 总数量="INT,*" >
+		<主线 序号="INT" 名称="ULONG" 事件序号="INT" 阶段数量="INT,1" 阶段="INT" />
+		<支线 序号="INT" 名称="ULONG" 事件序号="INT" 阶段数量="INT,1" 阶段="INT" />
+		<小事件 序号="INT" 名称="ULONG" 章节="INT,*" >
+			<章节 序号="INT" 名称="ULONG" 事件序号="INT" 阶段数量="INT,1" 阶段="INT" />
+		</小事件>
+		<所有任务 章节序号="INT" 小事件序号="INT" 任务状态="INT" 任务类型="INT" 已排序="BOOL" 编号="INT" 名称="ULONG" 贴图路径="STRING" 介绍="ULONG" 特效="ULONG" 等级要求="INT" 任务条件="INT,*" 完成条件="INT,*" >
+			<任务条件 类型="STRING" 介绍="STRING" />
+			<完成条件 类型="INT" 自动="BOOL" />
+		</所有任务>
+	</Mission>
+	<!-- PS: Mission文件暂时无法使用 -->
+
+<!-- BuffDebuff文件夹 -->	
+	<NicknameBuffDebuff.dat BuffDebuff类型="1,*" 名称="LANGUE" 介绍="LANGUE" 功能="LANGUE" 可用角色="UINT" 图标路径="STRING" 基础属性="1,*" 加成="1,*" 抗性="1,*" >
+		<BuffDebuff类型 编号="ID" 优先级="FLOAT" 间隔="FLOAT" 持续="FLOAT" 开始脚本="STRING" 结束脚本="STRING" Tick脚本="STRING" 主动脚本="STRING" 被动脚本="STRING" />
+		<基础属性 物攻="INT" 仙攻="INT" 物防="INT" 仙防="INT" 身法="INT" 运势="INT" 闪避="INT" 命中="INT" 招架="INT" 暴击="INT" />
+		<属性加成 水加成="FLOAT" 风加成="FLOAT" 火加成="FLOAT" 土加成="FLOAT" 雷加成="FLOAT" 物理加成="FLOAT" 阴加成="FLOAT" 阳加成="FLOAT" />
+		<属性抗性 水抗性="FLOAT" 风抗性="FLOAT" 火抗性="FLOAT" 土抗性="FLOAT" 雷抗性="FLOAT" 物理抗性="FLOAT" 阴抗性="FLOAT" 阳抗性="FLOAT" />
+	</NicknameBuffDebuff.dat>
+	
+	<SimpleBuffDebuff.dat 编号="UINT" 优先级="FLOAT" 间隔="FLOAT" 持续="FLOAT" 开始脚本="STRING" 结束脚本="STRING" Tick脚本="STRING" 主动脚本="STRING" 被动脚本="STRING" />
+	
+</Data>
